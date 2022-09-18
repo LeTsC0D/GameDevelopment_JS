@@ -298,9 +298,9 @@ function myMove(){
   }
 
   function has_game_endedmy() {
-    for (let i = 4; i < snakemy.length; i++) {
-      if (snakemy[i].x === snakemy[0].x && snakemy[i].y === snakemy[0].y) return true
-    }
+    // for (let i = 4; i < snakemy.length; i++) {
+    //   if (snakemy[i].x === snakemy[0].x && snakemy[i].y === snakemy[0].y) return true
+    // }
     const hitLeftWall = snakemy[0].x < 0;
     const hitRightWall = snakemy[0].x > snakeboard.width - 10;
     const hitToptWall = snakemy[0].y < 0;
